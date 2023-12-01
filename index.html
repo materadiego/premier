@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Montserrat:wght@300;500&family=Signika:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Premier - Legal & Real Estate Consultant LCC</title>
+  </head>
+  <body>
+    <section class="hero">
+      <div class="hero-overlay"></div>
+
+      <div class="hero-content">
+        <figure class="hero-logo">
+          <img src="./src/images/logo.png" alt="Logo" class="" />
+        </figure>
+        <h2 class="hero-text">
+          Encuentra la propiedad de tus sueños con nuestra asesoría
+          personalizada.
+        </h2>
+      </div>
+    </section>
+    <section class="about section">
+      <div class="about-container">
+        <!-- Box -->
+        <div class="about-box">
+          <figure class="about-box-image-container">
+            <img src="./src/images/img13.webp" alt="Background" />
+          </figure>
+          <p class="about-box-text">
+            Expertos en el mercado inmobiliario, brindando soluciones a medida
+            para cada cliente.
+          </p>
+        </div>
+        <!-- Box -->
+        <div class="about-box">
+          <figure class="about-box-image-container">
+            <img src="./src/images/img9.webp" alt="Background" />
+          </figure>
+          <p class="about-box-text">
+            Asesoramiento integral en compra, venta y alquiler de propiedades.
+            Estamos aquí para ayudarte
+          </p>
+        </div>
+        <!-- Box -->
+        <div class="about-box">
+          <figure class="about-box-image-container">
+            <img src="./src/images/img14.webp" alt="Background" />
+          </figure>
+          <p class="about-box-text">
+            Protege tu patrimonio con nuestro asesoramiento legal en sociedades
+            e inversiones. Tu tranquilidad es nuestra prioridad.
+          </p>
+        </div>
+        <!-- Box -->
+        <div class="about-box">
+          <figure class="about-box-image-container">
+            <img src="./src/images/img15.webp" alt="Background" />
+          </figure>
+          <p class="about-box-text">
+            Construyendo relaciones duraderas con nuestros clientes, basadas en
+            confianza y transparencia.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="contact section">
+      <figure class="contact-image">
+        <img src="./src/images/img3.webp" alt="Background" />
+      </figure>
+      <div class="contact-container">
+        <p class="contact-title">Contacto</p>
+        <form action="" id="form" method="post" class="form">
+          <input
+            type="text"
+            id="username"
+            class="input"
+            placeholder="Nombre y Apellido"
+            required
+            maxlength="200"
+          /><input
+            type="email"
+            id="useremail"
+            class="input"
+            placeholder="Email"
+            required
+            maxlength="200"
+          />
+          <textarea
+            name=""
+            id="usermessage"
+            class="textarea"
+            placeholder="Mensaje"
+            required
+            maxlength="2000"
+          ></textarea>
+          <button class="submit" type="submit">Enviar</button>
+          <div class="contact-response">
+            <p class="none" id="response"></p>
+            <img
+              src="./src/images/loader.svg"
+              alt=""
+              class="loader none"
+              id="loader"
+            />
+          </div>
+        </form>
+      </div>
+    </section>
+    <footer class="footer">
+      <figure class="footer-logo">
+        <img src="./src/images/logo-footer.png" alt="Background" />
+      </figure>
+      <div class="footer-container">
+        <div class="footer-container-item">
+          <a href="" class="paypal-link"
+            ><img
+              src="./src/images/paypal.png"
+              alt="Paypal"
+              class="paypal-image"
+          /></a>
+        </div>
+        <div class="footer-container-item">
+          <img src="./src/images/phone.png" alt="Location" class="phone-icon" />
+          <p class="item-text">+1 (941) 677-3430</p>
+        </div>
+        <div class="footer-container-item">
+          <img
+            src="./src/images/location.png"
+            alt="Phone"
+            class="location-icon"
+          />
+          <p class="item-text">25 SE 2nd Ave Miami Florida 33131</p>
+        </div>
+      </div>
+    </footer>
+    <script src="./src/js/contact.js"></script>
+  </body>
+</html>
