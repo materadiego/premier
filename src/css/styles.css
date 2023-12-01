@@ -38,7 +38,9 @@ p {
   background-image: url(../images/img1.webp);
   background-size: 315%;
   background-position: center top;
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  -webkit-animation-delay: 0.7s;
+  animation-delay: 0.7s; }
 
 .hero-overlay {
   position: absolute;
@@ -67,7 +69,9 @@ p {
   z-index: 2; }
 
 .hero-logo {
-  width: 100%; }
+  width: 100%;
+  -webkit-animation-delay: 1s;
+  animation-delay: 1s; }
 
 .hero-logo img {
   width: 100%; }
@@ -78,12 +82,16 @@ p {
   color: #ffffff;
   text-align: center;
   font-size: 5vw;
-  font-weight: 500; }
+  font-weight: 500;
+  -webkit-animation-delay: 2s;
+  animation-delay: 2s; }
 
 .about {
   padding: 5vw 0 0;
   -ms-flex-wrap: wrap;
-  flex-wrap: wrap; }
+  flex-wrap: wrap;
+  -webkit-animation-delay: 2.5s;
+  animation-delay: 2.5s; }
 
 .about-container {
   width: 90%; }
@@ -131,7 +139,9 @@ p {
   padding: 0 0 10vw;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  position: relative; }
+  position: relative;
+  -webkit-animation-delay: 3s;
+  animation-delay: 3s; }
 
 .contact-image {
   width: 100%;
@@ -300,6 +310,28 @@ p {
   font-size: 4vw;
   margin-left: 2vw; }
 
+.load-animation {
+  will-change: opacity;
+  opacity: 0;
+  -webkit-animation-name: loadAnimation;
+  animation-name: loadAnimation;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards; }
+
+@-webkit-keyframes loadAnimation {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@keyframes loadAnimation {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
 @media screen and (min-width: 1025px) {
   .hero {
     height: 50vw;
@@ -309,7 +341,7 @@ p {
   .hero-logo {
     width: 80%; }
   .hero-text {
-    margin: 0.5vw 0 0;
+    margin: 6vw 0 0;
     color: #ffffff;
     text-align: center;
     font-size: 2vw;
@@ -434,7 +466,13 @@ p {
   .paypal-link {
     width: 50%;
     margin-bottom: 0;
-    padding: 0.3vw 0; }
+    padding: 0.3vw 0;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+    will-change: border; }
+  .paypal-link:hover {
+    border: 2px solid #019be1; }
   .phone-icon {
     width: 1.4vw; }
   .location-icon {

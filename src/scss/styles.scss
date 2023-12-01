@@ -43,6 +43,7 @@ p {
   background-size: 315%;
   background-position: center top;
   background-repeat: no-repeat;
+  animation-delay: 0.7s;
 }
 
 .hero-overlay {
@@ -69,6 +70,7 @@ p {
 
 .hero-logo {
   width: 100%;
+  animation-delay: 1s;
 }
 
 .hero-logo img {
@@ -82,11 +84,13 @@ p {
   text-align: center;
   font-size: 5vw;
   font-weight: 500;
+  animation-delay: 2s;
 }
 
 .about {
   padding: 5vw 0 0;
   flex-wrap: wrap;
+  animation-delay: 2.5s;
 }
 
 .about-container {
@@ -126,6 +130,7 @@ p {
   padding: 0 0 10vw;
   flex-wrap: wrap;
   position: relative;
+  animation-delay: 3s;
 }
 
 .contact-image {
@@ -265,6 +270,23 @@ p {
   margin-left: 2vw;
 }
 
+.load-animation {
+  will-change: opacity;
+  opacity: 0;
+  animation-name: loadAnimation;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes loadAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 @media screen and (min-width: 1025px) {
   .hero {
     height: 50vw;
@@ -280,7 +302,7 @@ p {
   }
 
   .hero-text {
-    margin: 0.5vw 0 0;
+    margin: 6vw 0 0;
     color: #ffffff;
     text-align: center;
     font-size: 2vw;
@@ -425,6 +447,12 @@ p {
     width: 50%;
     margin-bottom: 0;
     padding: 0.3vw 0;
+    transition: 0.3s;
+    will-change: border;
+  }
+
+  .paypal-link:hover {
+    border: 2px solid #019be1;
   }
 
   .phone-icon {
